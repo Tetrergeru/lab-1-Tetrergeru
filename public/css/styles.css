@@ -144,6 +144,53 @@ body {
 .resume-page__motto {
   font-size: 30px;
   line-height: 40px;
-  padding: 0 70px;
+  padding: 0 70px 30px 70px;
   color: #505050;
+}
+
+.resume-page__skills {
+  padding: 0 70px;
+  display: flex;
+}
+
+.resume-page__skills_rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-page__skills_rows_left {
+  flex: 2 2;
+  margin-right: 50px;
+}
+
+.resume-page__skills_rows_right {
+  flex: 1 1;
+}
+
+.resume-page__skill_header {
+  font-size: 15px;
+}
+
+.resume-page__skill_element {
+  margin: 20px 0
+}
+
+.resume-page__skill_sub {
+  color: #505050;
+}
+
+.resume-page__skill_time {
+  color: #aaaaaa;
+}
+
+.resume-page__skill_lang {
+  margin: 15px 0
+}
+
+.resume-page__skill_hard {
+  display: flex;
+}
+
+.resume-page__skill_hard_element {
+  margin-bottom: 15px;
 }
