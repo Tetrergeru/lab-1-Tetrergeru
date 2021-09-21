@@ -150,21 +150,10 @@ body {
 
 .resume-page__skills {
   padding: 0 70px;
-  display: flex;
-}
-
-.resume-page__skills_rows {
-  display: flex;
-  flex-direction: column;
-}
-
-.resume-page__skills_rows_left {
-  flex: 2 2;
-  margin-right: 50px;
-}
-
-.resume-page__skills_rows_right {
-  flex: 1 1;
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: 2fr 1fr
 }
 
 .resume-page__skill_header {
@@ -188,9 +177,52 @@ body {
 }
 
 .resume-page__skill_hard {
-  display: flex;
+  display: grid;
+  row-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.resume-page__skill_hard_element {
-  margin-bottom: 15px;
+.resume-page__footer {
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  padding: 5px;
+}
+
+.resume-page__footer > div {
+  margin: 5px;
+}
+
+.github-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("/images/github.svg") no-repeat;
+}
+.github-icon:hover {
+  background: url("/images/github-back.svg") no-repeat;
+  background-size: 28px;
+}
+
+.ball-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("/images/ball.svg") no-repeat;
+}
+.ball-icon:hover {
+  background: url("/images/ball-back.svg") no-repeat;
+  background-size: 28px;
+}
+
+.twitter-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("/images/twitter.svg") no-repeat;
+}
+.twitter-icon:hover {
+  background: url("/images/twitter-back.svg") no-repeat;
+  background-size: 28px;
 }
