@@ -198,10 +198,10 @@ body {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url("./images/github.svg") no-repeat;
+  background: url("../images/github.svg") no-repeat;
 }
 .github-icon:hover {
-  background: url("./images/github-back.svg") no-repeat;
+  background: url("../images/github-back.svg") no-repeat;
   background-size: 28px;
 }
 
@@ -209,10 +209,10 @@ body {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url("./images/ball.svg") no-repeat;
+  background: url("../images/ball.svg") no-repeat;
 }
 .ball-icon:hover {
-  background: url("./images/ball-back.svg") no-repeat;
+  background: url("../images/ball-back.svg") no-repeat;
   background-size: 28px;
 }
 
@@ -220,9 +220,9 @@ body {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url("./images/twitter.svg") no-repeat;
+  background: url("../images/twitter.svg") no-repeat;
 }
 .twitter-icon:hover {
-  background: url("./images/twitter-back.svg") no-repeat;
+  background: url("../images/twitter-back.svg") no-repeat;
   background-size: 28px;
 }
