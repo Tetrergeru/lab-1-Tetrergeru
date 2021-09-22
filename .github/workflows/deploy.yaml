@@ -9,6 +9,9 @@ jobs:
   deploy-to-githubio:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
