@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>My awesome resume</title>
+    <meta name="description" content="My awesome resume">
+    <meta name="author" content="Johny Catswill">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+      (function() {
+        document.addEventListener('DOMContentLoaded', function(){ 
+          const button = window.document.querySelector('.actions__download-btn');
+          button.onclick = function() {
+            const  source = window.document.querySelector('.resume-page');
+            html2pdf(source);
+          };
+        }, false);
+      })();
+    </script>
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="logo">
+          <a href="/" class="logo__text">CV Super Builder</a>
+        </div>
+        <div class="actions">
+          <button class="actions__download-btn">Download PDF</button>
+        </div>
+      </div>   
+    </header>
+    <main class="resume-container">
+      <div class="resume-page">
+        <div  class="resume-page__header">
+          <div class="resume-page__header_left">
+            <img src="./images/profile.jpg" width="70" height="70" class="resume-page__header_image">
+            <div>
+              <div class="resume-page__header_name">Arutyunov Oleg</div>
+              <div class="resume-page__header_job">software developer</div>
+            </div>
+          </div>
+          <div class="resume-page__header_rigth">
+            <div class="resume-page__header_credentials">ArutunoffOleg@yandex.ru</div>
+            <div class="resume-page__header_credentials">+7(928)754-44-65</div>
+          </div>
+        </div>
+        <div class="resume-page__motto">
+          To obtain a professional position in the consulting industru utilizing my relevant experience, technical expertise, and problem solving skills.
+        </div>
+        <div class="resume-page__skills">
+
+            <div class="resume-page__skill00">
+              <div class="resume-page__skill_header resume-page__skill_element" style="color: purple">EDUCATION</div>
+              <div class="resume-page__skill_element">
+                <b>Bachelor of Science in Computer Science</b>, South Federal University, Rostov-on-Don, Russia, GPA: 5.0
+              </div>
+              <div class="resume-page__skill_element resume-page__skill_sub">
+                <b>Diplima:</b> Building of (M, N)-regular Tanner Grapghs With The Greatest Girth.
+              </div>
+              <div class="resume-page__skill_element resume-page__skill_time">
+                Sep 2017 - Jun 2021
+              </div>
+            </div>
+
+            <div class="resume-page__skill10">
+              <div class="resume-page__skill_header resume-page__skill_element" style="color: cyan">SKILLS</div>
+              <div class="resume-page__skill_hard">
+                  <div>Kotlin</div>
+                  <div>Helm</div>
+
+                  <div>Golang</div>
+                  <div>Linux</div>
+
+                  <div>Rust</div>
+                  <div>Postgress</div>
+
+                  <div>C#</div>
+                  <div>Clickhouse</div>
+
+                  <div>Docker</div>
+                  <div>Kubernetes</div>
+              </div>
+            </div>
+
+            <div class="resume-page__skill01">
+              <div class="resume-page__skill_header resume-page__skill_element" style="color: green">EXPERIENCE</div>
+              <div class="resume-page__skill_element">
+                <b>Junior developer</b> at <b>SpetsVUZAvtomatica</b>,
+              </div>
+              <div class="resume-page__skill_element resume-page__skill_sub">
+                <div>— Developed [DATA EXPUNGED]</div>
+                <div>— Added th████zition to procedure KV-████</div>
+                <div>— Fixed bug in ḧ̶͖́̓͝e̵̗̹̫̭̳̽̈́ ̴̗̉̄c̷̻͔͔̋̀͂̆͘ō̴̟̓m̸̢͇̙̂̅̍͝ẽ̸̺̃̾ͅs̴͉̭̩͌̍̕̚</div>
+              </div>
+              <div class="resume-page__skill_element resume-page__skill_time">
+                Aug 2020 - future
+              </div>
+              <div class="resume-page__skill_element">
+                <b>Assistant</b> at <b>South Federal University</b>,
+              </div>
+              <div class="resume-page__skill_element resume-page__skill_sub">
+                <div>— Performed two lessons</div>
+                <div>— Set up antiplagiarising tool</div>
+              </div>
+              <div class="resume-page__skill_element resume-page__skill_time">
+                Sep 2021 - future
+              </div>
+            </div>
+
+            <div class="resume-page__skill11">
+              <div class="resume-page__skill_header resume-page__skill_element" style="color: orangered">LANGUAGES</div>
+              <div class="resume-page__skill_element">
+                <div class="resume-page__skill_lang">Russian</div>
+                <div class="resume-page__skill_lang">English</div>
+                <div class="resume-page__skill_lang">Linspata</div>
+              </div>
+            </div>
+            
+        </div>
+
+        <div class="resume-page__footer">
+          <a href="https://github.com/Tetrergeru"><div class="github-icon"></div></a>
+          <a href="https://github.com/Tetrergeru"><div class="ball-icon"></div></a>
+          <a href="https://twitter.com/Tetrergeru"><div class="twitter-icon"></div></a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

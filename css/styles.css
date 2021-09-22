@@ -1,0 +1,228 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+body {
+  background-color: #FFFFFF;
+  color: #262b33;
+  font-family: 'Lato', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  background-color: #F5F5F5;
+  height: 250px;
+  position: relative;
+}
+
+.header__content {
+  padding: 45px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__text {
+  color: #000000;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-decoration: none;
+}
+
+.actions__download-btn {
+  background-color: #3666F7;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.133984px;
+  appearance: none;
+  outline: none;
+  text-align: center;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background-color .1s ease;
+  border: none;
+  border-radius: 6px;
+}
+
+.actions__download-btn:hover {
+  background-color: #0940E7;
+}
+
+.resume-container {
+  margin-bottom: 180px;
+  margin-top: -125px;
+}
+
+.resume-page {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  border-radius: 5px;
+  width: 900px;
+  min-height: 1200px;
+  margin: auto;
+  z-index: 2;
+}
+
+.resume-page__header {
+  padding: 70px 70px 35px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-page__header_left {
+  display: flex;
+}
+
+.resume-page__header_image {
+  margin-right: 20px;
+}
+
+.resume-page__header_name {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.resume-page__header_job {
+  font-size: 20px;
+  color: #505050;
+}
+
+.resume-page__header_rigth {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+
+.resume-page__header_credentials {
+  font-size: 17px;
+  color: #aaaaaa;
+  margin-bottom: 10px
+}
+
+.resume-page__motto {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0 70px 30px 70px;
+  color: #505050;
+}
+
+.resume-page__skills {
+  padding: 0 70px;
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: 2fr 1fr
+}
+
+.resume-page__skill_header {
+  font-size: 15px;
+}
+
+.resume-page__skill_element {
+  margin: 20px 0
+}
+
+.resume-page__skill_sub {
+  color: #505050;
+}
+
+.resume-page__skill_time {
+  color: #aaaaaa;
+}
+
+.resume-page__skill_lang {
+  margin: 15px 0
+}
+
+.resume-page__skill_hard {
+  display: grid;
+  row-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.resume-page__footer {
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  padding: 5px;
+}
+
+.resume-page__footer > div {
+  margin: 5px;
+}
+
+.github-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("./images/github.svg") no-repeat;
+}
+.github-icon:hover {
+  background: url("./images/github-back.svg") no-repeat;
+  background-size: 28px;
+}
+
+.ball-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("./images/ball.svg") no-repeat;
+}
+.ball-icon:hover {
+  background: url("./images/ball-back.svg") no-repeat;
+  background-size: 28px;
+}
+
+.twitter-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("./images/twitter.svg") no-repeat;
+}
+.twitter-icon:hover {
+  background: url("./images/twitter-back.svg") no-repeat;
+  background-size: 28px;
+}
